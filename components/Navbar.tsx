@@ -46,7 +46,7 @@ const Navbar = () => {
                   >
                     <Avatar className="h-8 w-8">
                       <AvatarFallback className="bg-primary text-white">
-                        {session.user.name[0].toUpperCase()}
+                        {session.user.name[0].toUpperCase() || "N/A"}
                       </AvatarFallback>
                     </Avatar>
                   </Button>
