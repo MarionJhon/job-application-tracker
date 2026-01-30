@@ -17,7 +17,7 @@ const ImageTabs = () => {
       title: "organize",
     },
     { src: "/hero-images/hero2.png", alt: "Get Hired", title: "hired" },
-    { src: "/hero-images/hero3.png", alt: "Manage Borders", title: "boards" },
+    { src: "/hero-images/hero3.png", alt: "Manage Boards", title: "boards" },
   ];
   return (
     <section className="border-t bg-white py-16">
