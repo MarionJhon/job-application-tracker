@@ -65,7 +65,7 @@ export default function Home() {
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="mb-3 text-2xl font-semibold text-black">
-                  Stay Organize
+                  Stay Organized
                 </h3>
                 <p className="text-muted-foreground">
                   Never lose track of an application. Keep all your job search
