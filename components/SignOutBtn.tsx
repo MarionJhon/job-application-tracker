@@ -3,6 +3,7 @@
 import { signOut } from "@/lib/auth/auth-client";
 import { DropdownMenuItem } from "./ui/dropdown-menu";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 const SignOutBtn = () => {
   const router = useRouter();
@@ -14,7 +15,7 @@ const SignOutBtn = () => {
         if (result.data) {
           router.push("/sign-in");
         } else {
-          alert("Error signing out");
+          toast.error("Error signing out");
         }
       }}
     >
