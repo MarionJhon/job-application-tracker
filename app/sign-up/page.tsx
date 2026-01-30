@@ -42,7 +42,7 @@ const SignUp = () => {
       if (result.error) {
         setError(result.error.message ?? "Failed to sign up");
       } else {
-        router.push("/sign-in")
+        router.push("/sign-in");
       }
     } catch (error) {
       setError("An unexpected error occurred ");
@@ -63,12 +63,12 @@ const SignUp = () => {
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
-          {error && (
-            <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
-              {error}
-            </div>
-          )}
           <CardContent className="space-y-4">
+            {error && (
+              <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
+                {error}
+              </div>
+            )}
             <div className="space-y-2">
               <Label htmlFor="name" className="text-gray-700">
                 Name
@@ -122,7 +122,7 @@ const SignUp = () => {
               {isLoading ? "Creating account..." : "Sign up"}
             </Button>
             <p className="text-center text-sm text-gray-600">
-              Already have an account?
+              Already have an account?{" "}
               <Link
                 href="/sign-in"
                 className="font-medium text-primary hover:underline"
