@@ -59,12 +59,12 @@ const SignIn = () => {
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
-          {error && (
-            <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
-              {error}
-            </div>
-          )}
           <CardContent className="space-y-4">
+            {error && (
+              <div className="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
+                {error}
+              </div>
+            )}
             <div className="space-y-2">
               <Label htmlFor="email" className="text-gray-700">
                 Email
@@ -102,7 +102,7 @@ const SignIn = () => {
               {isLoading ? "Signing in..." : "Sign in"}
             </Button>
             <p className="text-center text-sm text-gray-600">
-              Don't have an account?
+              Don't have an account?{" "}
               <Link
                 href="/sign-up"
                 className="font-medium text-primary hover:underline"
