@@ -3,7 +3,7 @@ import { Board, Column } from "./models";
 
 const DEFAULT_COLUMN = [
   {
-    name: "Wist List",
+    name: "Wish List",
     order: 0,
   },
   {
@@ -59,5 +59,8 @@ export const initializeUserBoard = async (userId: string) => {
     await board.save();
 
     return board;
-  } catch (error) {}
+  } catch (error) {
+    console.error("initializeUserBoard failed", error);
+    throw error;
+  }
 };
