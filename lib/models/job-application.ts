@@ -12,7 +12,7 @@ export interface IJobApplication extends Document {
   notes?: string;
   salary?: string;
   jobUrl?: string;
-  appliedDate?: string;
+  appliedDate?: Date;
   tag?: string[];
   description?: string;
   createdAt: Date;
