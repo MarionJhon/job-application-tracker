@@ -1,4 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Job Application Tracker
+
+## About Project
+
+Job Application Tracker is a full-stack web application designed to help job seekers organize and manage their job applications efficiently. The application provides an intuitive interface to track job opportunities, application status, and important details throughout the job search process.
+
+## Tech Stack
+
+### Frontend
+- **Next.js 16** - React framework for production
+- **React 19** - JavaScript library for building user interfaces
+- **TypeScript** - Typed superset of JavaScript
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Radix UI** - Unstyled, accessible component library
+- **Lucide React** - Icon library
+- **@dnd-kit** - Drag and drop toolkit for React
+
+### Backend
+- **Next.js API Routes** - Backend API endpoints
+- **MongoDB** - NoSQL database
+- **Mongoose** - MongoDB object modeling
+- **Better Auth** - Authentication solution
+
+### UI Components & Styling
+- **next-themes** - Theme management
+- **class-variance-authority** - CSS class variant management
+- **tailwind-merge** - Merge Tailwind CSS classes
+- **Sonner** - Toast notification library
+
+### Development Tools
+- **ESLint** - Code linting
+- **TypeScript 5** - Type checking
+- **tsx** - TypeScript execution environment
 
 ## Getting Started
 
